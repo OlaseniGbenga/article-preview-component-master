@@ -1,0 +1,150 @@
+:root {
+  /* colors */
+  --vd-grayish-blue: hsl(217, 19%, 35%);
+  --d-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --l-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+}
+h1 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: var(--vd-grayish-blue);
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+p {
+  font-size: 0.7rem;
+  margin: 0;
+  color: var(--grayish-blue);
+  line-height: 1.1rem;
+}
+
+.fullscreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--l-grayish-blue);
+}
+
+.container {
+  height: 15rem;
+  width: 40rem;
+  border-radius: 10px;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 16rem 24rem;
+  position: relative;
+}
+
+.section-1 {
+  background: url("./images/drawers.jpg");
+  background-size: cover;
+}
+
+.section-2 {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.full-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.info h1 {
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.info p {
+  display: inline-block;
+  font-size: 0.6rem;
+}
+
+.share {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--l-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.share img {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.speech {
+  width: 250px;
+  height: 50px;
+  background: blue;
+  position: absolute;
+  border-radius: 10px;
+  left: 29rem;
+  /* transform: translate(-50%, -50%);
+  top: 21.4rem;
+  left: 59.8rem; */
+}
+
+.speech:before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  content: "";
+  border-top: 13px solid transparent;
+  border-right: 26px solid blue;
+  border-bottom: 13px solid transparent;
+  margin: 13px 0 0 -25px;
+  /* transform: rotate(270deg);
+    bottom: -1rem;
+    left: 55%; */
+}
+@media only screen and (max-width: 670px) {
+  .container {
+    height: 35rem;
+    width: 20rem;
+    grid-template-columns: none;
+    grid-template-rows: 40% 60%;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .container {
+    height: 35rem;
+    width: 14rem;
+  }
+}
