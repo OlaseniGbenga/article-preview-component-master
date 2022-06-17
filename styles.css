@@ -39,23 +39,36 @@ p {
   width: 40rem;
   border-radius: 10px;
   display: grid;
-  overflow: hidden;
+  /* overflow: hidden; */
   grid-template-columns: 16rem 24rem;
-  position: relative;
+}
+
+.this {
+  display: inline-block;
+  height: 80%;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+  display: flex;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  z-index: 1;
+  background: #fff;
+  padding: 1.5rem 2rem;
 }
 
 .section-1 {
   background: url("./images/drawers.jpg");
   background-size: cover;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
 }
 
 .section-2 {
-  background: #fff;
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  overflow: hidden;
+  position: relative;
 }
 
 .avatar {
@@ -114,7 +127,8 @@ p {
   background: blue;
   position: absolute;
   border-radius: 10px;
-  left: 29rem;
+  left: 12rem;
+  bottom: 5rem;
   /* transform: translate(-50%, -50%);
   top: 21.4rem;
   left: 59.8rem; */
