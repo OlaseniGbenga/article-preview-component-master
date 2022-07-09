@@ -124,14 +124,28 @@ p {
 .speech {
   width: 250px;
   height: 50px;
-  background: blue;
+  background: var(--vd-grayish-blue);
   position: absolute;
   border-radius: 10px;
-  left: 12rem;
+  left: 12.8rem;
   bottom: 5rem;
   /* transform: translate(-50%, -50%);
   top: 21.4rem;
   left: 59.8rem; */
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem;
+}
+
+.speech img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.speech p {
+  font-size: 1rem;
+  font-weight: ;
 }
 
 .speech:before {
@@ -140,19 +154,35 @@ p {
   height: 0;
   content: "";
   border-top: 13px solid transparent;
-  border-right: 26px solid blue;
+  border-right: 26px solid var(--vd-grayish-blue);
   border-bottom: 13px solid transparent;
   margin: 13px 0 0 -25px;
   /* transform: rotate(270deg);
     bottom: -1rem;
     left: 55%; */
+  transform: rotate(266deg);
+  left: 9rem;
+  top: 1.4rem;
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 800px) {
   .container {
     height: 35rem;
     width: 20rem;
     grid-template-columns: none;
     grid-template-rows: 40% 60%;
+  }
+
+  .section-1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    overflow: hidden;
+  }
+
+  .this {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 
