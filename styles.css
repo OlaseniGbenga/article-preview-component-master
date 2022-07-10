@@ -132,7 +132,7 @@ p {
   /* transform: translate(-50%, -50%);
   top: 21.4rem;
   left: 59.8rem; */
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 0 1rem;
@@ -164,7 +164,7 @@ p {
   left: 9rem;
   top: 1.4rem;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .container {
     height: 35rem;
     width: 20rem;
